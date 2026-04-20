@@ -26,7 +26,7 @@ export default function LookbookGrid() {
               <img
                 src={item.src}
                 alt={item.title}
-                className="w-full h-full object-cover grayscale opacity-90 transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105"
+                className="w-full h-full object-cover transition-all duration-500 group-hover:grayscale group-hover:opacity-90 group-hover:scale-105"
               />
             </div>
             

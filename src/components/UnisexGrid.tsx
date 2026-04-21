@@ -4,26 +4,24 @@ import Image from "next/image";
 
 // Clean, rigorous data structure for the grid
 const ITEMS = [
-  { id: 1, src: "/mockups/Cotton_crop_top_202604201822.jpeg", title: "BATCH 01 // CROP TOP", details: "EXP: 14 MINS" },
-  { id: 2, src: "/headshots/Model_taking_mirror_202604201857.jpeg", title: "STUDY: LIGHT LEAK", details: "RAW CAPTURE" },
-  { id: 3, src: "/mockups/Crop_top_with_202604201822_4.jpeg", title: "ARCHIVE 002", details: "TEXTURE STUDY" },
-  { id: 4, src: "/mockups/Cotton_crop_top_202604201822_2.jpeg", title: "COTTON STUDY 02", details: "EXP: 10 MINS" },
-  { id: 5, src: "/mockups/Crop_top_with_202604201822_2.jpeg", title: "DETAIL CAPTURE", details: "EXP: 12 MINS" },
-  { id: 6, src: "/headshots/Model_wearing_crop_202604201859.jpeg", title: "RAW CAPTURE 02", details: "STUDIO 1" },
-  { id: 7, src: "/mockups/Cotton_crop_top_202604201822_3.jpeg", title: "TEXTURE STUDY 03", details: "EXP: 08 MINS" },
-  { id: 8, src: "/mockups/Crop_top_with_202604201822_3.jpeg", title: "BATCH 02 // PREVIEW", details: "EXP: 18 MINS" },
-  { id: 9, src: "/mockups/Crop_top_with_202604201822.jpeg", title: "BATCH 02 // CROP TOP", details: "EXP: 20 MINS" },
+  { id: 1, src: "/mockups/unisex_tshirts/Men's_t-shirt_Prussian_202604210937.jpeg", title: "UNISEX 01 // PRUSSIAN", details: "HEAVYWEIGHT COTTON" },
+  { id: 2, src: "/mockups/unisex_tshirts/Men's_t-shirt_Prussian_202604210937_2.jpeg", title: "UNISEX 02 // PRUSSIAN", details: "STUDIO CAPTURE" },
+  { id: 3, src: "/mockups/unisex_tshirts/T-shirt_with_Prussian_202604210937.jpeg", title: "UNISEX 03 // PRUSSIAN", details: "TEXTURE STUDY" },
+  { id: 4, src: "/mockups/unisex_tshirts/T-shirt_with_Prussian_202604210937_2.jpeg", title: "UNISEX 04 // PRUSSIAN", details: "RAW CAPTURE" },
+  { id: 5, src: "/mockups/unisex_tshirts/T-shirt_with_Prussian_202604210937_3.jpeg", title: "UNISEX 05 // PRUSSIAN", details: "DETAIL FOCUS" },
+  { id: 6, src: "/mockups/unisex_tshirts/T-shirt_with_Prussian_202604210937_4.jpeg", title: "UNISEX 06 // PRUSSIAN", details: "SILHOUETTE STUDY" },
+  { id: 7, src: "/mockups/unisex_tshirts/T-shirt_with_Prussian_202604210937_5.jpeg", title: "UNISEX 07 // PRUSSIAN", details: "SILHOUETTE STUDY" },
 ];
 
-export default function LookbookGrid() {
+export default function UnisexGrid() {
   return (
     <section className="w-full bg-paper-white relative z-10 border-t border-prussian-blue/20">
       <div className="w-full flex items-center justify-between border-b border-prussian-blue/20 p-4 md:p-8">
         <h2 className="font-syne text-2xl md:text-4xl font-extrabold text-prussian-blue tracking-tighter uppercase">
-          CROP TOPS
+          UNISEX TSHIRTS
         </h2>
         <p className="font-space text-xs md:text-sm text-prussian-blue/70 tracking-widest font-bold uppercase">
-          SUN KISSED PURSSIAN BLUE
+          SUN KISSED PRUSSIAN BLUE
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x border-b border-prussian-blue/20 divide-prussian-blue/20 border-prussian-blue/20">

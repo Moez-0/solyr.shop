@@ -1,7 +1,6 @@
 import React from 'react';
 
 const CATEGORIES = [
-  "MENSWEAR",
   "HATS",
   "TOTE BAGS"
 ];
@@ -18,7 +17,7 @@ export default function ComingSoon() {
         </p>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-3 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 w-full">
         {CATEGORIES.map((cat, idx) => (
           <div 
             key={cat} 

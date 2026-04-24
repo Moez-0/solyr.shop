@@ -5,14 +5,12 @@ import Image from "next/image";
 // Clean, rigorous data structure for the grid
 const ITEMS = [
   { id: 1, src: "/mockups/Cotton_crop_top_202604201822.jpeg", title: "BATCH 01 // CROP TOP", details: "EXP: 14 MINS" },
-  { id: 2, src: "/headshots/Model_taking_mirror_202604201857.jpeg", title: "STUDY: LIGHT LEAK", details: "RAW CAPTURE" },
-  { id: 3, src: "/mockups/Crop_top_with_202604201822_4.jpeg", title: "ARCHIVE 002", details: "TEXTURE STUDY" },
-  { id: 4, src: "/mockups/Cotton_crop_top_202604201822_2.jpeg", title: "COTTON STUDY 02", details: "EXP: 10 MINS" },
-  { id: 5, src: "/mockups/Crop_top_with_202604201822_2.jpeg", title: "DETAIL CAPTURE", details: "EXP: 12 MINS" },
-  { id: 6, src: "/headshots/Model_wearing_crop_202604201859.jpeg", title: "RAW CAPTURE 02", details: "STUDIO 1" },
-  { id: 7, src: "/mockups/Cotton_crop_top_202604201822_3.jpeg", title: "TEXTURE STUDY 03", details: "EXP: 08 MINS" },
-  { id: 8, src: "/mockups/Crop_top_with_202604201822_3.jpeg", title: "BATCH 02 // PREVIEW", details: "EXP: 18 MINS" },
-  { id: 9, src: "/mockups/Crop_top_with_202604201822.jpeg", title: "BATCH 02 // CROP TOP", details: "EXP: 20 MINS" },
+  { id: 2, src: "/mockups/Crop_top_with_202604201822_4.jpeg", title: "ARCHIVE 002", details: "TEXTURE STUDY" },
+  { id: 3, src: "/mockups/Cotton_crop_top_202604201822_2.jpeg", title: "COTTON STUDY 02", details: "EXP: 10 MINS" },
+  { id: 4, src: "/mockups/Crop_top_with_202604201822_2.jpeg", title: "DETAIL CAPTURE", details: "EXP: 12 MINS" },
+  { id: 5, src: "/mockups/Cotton_crop_top_202604201822_3.jpeg", title: "TEXTURE STUDY 03", details: "EXP: 08 MINS" },
+  { id: 6, src: "/mockups/Crop_top_with_202604201822_3.jpeg", title: "BATCH 02 // PREVIEW", details: "EXP: 18 MINS" },
+  { id: 7, src: "/mockups/Crop_top_with_202604201822.jpeg", title: "BATCH 02 // CROP TOP", details: "EXP: 20 MINS" },
 ];
 
 export default function LookbookGrid() {

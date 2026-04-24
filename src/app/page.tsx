@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import PhotoshootShowcase from "@/components/PhotoshootShowcase";
 import Manifesto from "@/components/Manifesto";
 import LookbookGrid from "@/components/LookbookGrid";
 import UnisexGrid from "@/components/UnisexGrid";
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between w-full overflow-hidden">
       <Hero />
+      <PhotoshootShowcase />
       <Manifesto />
       <LookbookGrid />
       <UnisexGrid />

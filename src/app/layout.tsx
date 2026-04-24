@@ -28,11 +28,20 @@ export const metadata: Metadata = {
     siteName: "SOLYR",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/mockups/Cotton_crop_top_202604201822_2.jpeg",
+        width: 768,
+        height: 1376,
+        alt: "SOLYR — Cotton Crop Top",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "SOLYR",
     description: "Sun printed artwear. Join the SOLYR archive for first access.",
+    images: ["/mockups/Cotton_crop_top_202604201822_2.jpeg"],
   },
 };
 

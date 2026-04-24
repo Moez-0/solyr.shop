@@ -6,11 +6,10 @@ import Image from "next/image";
 const ITEMS = [
   { id: 1, src: "/mockups/unisex_tshirts/Men's_t-shirt_Prussian_202604210937.jpeg", title: "UNISEX 01 // PRUSSIAN", details: "HEAVYWEIGHT COTTON" },
   { id: 2, src: "/mockups/unisex_tshirts/Men's_t-shirt_Prussian_202604210937_2.jpeg", title: "UNISEX 02 // PRUSSIAN", details: "STUDIO CAPTURE" },
-  { id: 3, src: "/mockups/unisex_tshirts/T-shirt_with_Prussian_202604210937.jpeg", title: "UNISEX 03 // PRUSSIAN", details: "TEXTURE STUDY" },
-  { id: 4, src: "/mockups/unisex_tshirts/T-shirt_with_Prussian_202604210937_2.jpeg", title: "UNISEX 04 // PRUSSIAN", details: "RAW CAPTURE" },
-  { id: 5, src: "/mockups/unisex_tshirts/T-shirt_with_Prussian_202604210937_3.jpeg", title: "UNISEX 05 // PRUSSIAN", details: "DETAIL FOCUS" },
-  { id: 6, src: "/mockups/unisex_tshirts/T-shirt_with_Prussian_202604210937_4.jpeg", title: "UNISEX 06 // PRUSSIAN", details: "SILHOUETTE STUDY" },
-  { id: 7, src: "/mockups/unisex_tshirts/T-shirt_with_Prussian_202604210937_5.jpeg", title: "UNISEX 07 // PRUSSIAN", details: "SILHOUETTE STUDY" },
+  { id: 3, src: "/mockups/unisex_tshirts/T-shirt_with_Prussian_202604210937_2.jpeg", title: "UNISEX 04 // PRUSSIAN", details: "RAW CAPTURE" },
+  { id: 4, src: "/mockups/unisex_tshirts/T-shirt_with_Prussian_202604210937_3.jpeg", title: "UNISEX 05 // PRUSSIAN", details: "DETAIL FOCUS" },
+  { id: 5, src: "/mockups/unisex_tshirts/T-shirt_with_Prussian_202604210937_4.jpeg", title: "UNISEX 06 // PRUSSIAN", details: "SILHOUETTE STUDY" },
+  { id: 6, src: "/mockups/unisex_tshirts/T-shirt_with_Prussian_202604210937_5.jpeg", title: "UNISEX 07 // PRUSSIAN", details: "SILHOUETTE STUDY" },
 ];
 
 export default function UnisexGrid() {

@@ -14,6 +14,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://solyr.com"),
   title: "SOLYR | Waitlist",
   description: "SUN PRINTED ARTWEAR",
   icons: {

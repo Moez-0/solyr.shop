@@ -1,11 +1,15 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Image from "next/image";
-import { useSearchParams } from "next/navigation";
 
 export default function Footer() {
-  const searchParams = useSearchParams();
-  const isSubscribed = searchParams.get("subscribed") === "1";
+  const [isSubscribed, setIsSubscribed] = useState(false);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    setIsSubscribed(params.get("subscribed") === "1");
+  }, []);
 
   return (
     <footer className="w-full bg-paper-white relative z-10">

@@ -1,15 +1,38 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { FormEvent, useState } from "react";
 import Image from "next/image";
 
 export default function Footer() {
-  const [isSubscribed, setIsSubscribed] = useState(false);
+  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
 
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    setIsSubscribed(params.get("subscribed") === "1");
-  }, []);
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    setStatus("submitting");
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("/__forms.html", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: new URLSearchParams(formData as unknown as Record<string, string>).toString(),
+      });
+
+      if (!response.ok) {
+        throw new Error("Form submission failed");
+      }
+
+      setStatus("success");
+      form.reset();
+    } catch {
+      setStatus("error");
+    }
+  }
 
   return (
     <footer className="w-full bg-paper-white relative z-10">
@@ -38,10 +61,7 @@ export default function Footer() {
         <div className="p-12 md:p-24 flex flex-col justify-end">
           <form
             name="notify-me"
-            method="POST"
-            action="/?subscribed=1"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
+            onSubmit={handleSubmit}
             className="w-full flex flex-col gap-6"
           >
             <input type="hidden" name="form-name" value="notify-me" />
@@ -57,13 +77,19 @@ export default function Footer() {
             </div>
             <button
               type="submit"
+              disabled={status === "submitting"}
               className="w-full border-2 border-prussian-blue bg-prussian-blue px-6 py-6 font-syne text-xl md:text-2xl font-bold tracking-tight text-paper-white hover:bg-paper-white hover:text-prussian-blue transition-colors duration-300 uppercase"
             >
-              Notify Me
+              {status === "submitting" ? "Submitting..." : "Notify Me"}
             </button>
-            {isSubscribed && (
+            {status === "success" && (
               <p className="font-space text-xs font-bold tracking-[0.18em] text-prussian-blue uppercase border border-prussian-blue/20 px-4 py-3 bg-prussian-blue/5">
                 You&apos;re on the list.
+              </p>
+            )}
+            {status === "error" && (
+              <p className="font-space text-xs font-bold tracking-[0.18em] text-prussian-blue uppercase border border-prussian-blue/20 px-4 py-3 bg-prussian-blue/5">
+                Submission failed. Try again.
               </p>
             )}
             <div className="flex justify-between font-space text-[10px] font-bold tracking-[0.2em] text-prussian-blue/50 uppercase mt-4">

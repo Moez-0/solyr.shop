@@ -16,22 +16,22 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL("https://solyr.com"),
   title: "SOLYR | Waitlist",
-  description: "SUN PRINTED ARTWEAR",
+  description: "Sun printed artwear. Join the SOLYR archive for first access.",
   icons: {
     icon: "/favicon.svg",
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
     title: "SOLYR",
-    description: "SUN PRINTED ARTWEAR",
+    description: "Sun printed artwear. Join the SOLYR archive for first access.",
     url: "https://solyr.com",
     siteName: "SOLYR",
     images: [
       {
-        url: "/opengraph-image.png",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "SOLYR - SUN PRINTED ARTWEAR",
+        alt: "SOLYR — Sun Printed Artwear",
       },
     ],
     locale: "en_US",
@@ -40,8 +40,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "SOLYR",
-    description: "SUN PRINTED ARTWEAR",
-    images: ["/twitter-image.png"],
+    description: "Sun printed artwear. Join the SOLYR archive for first access.",
+    images: ["/twitter-image"],
   },
 };
 

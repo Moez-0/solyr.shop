@@ -13,6 +13,12 @@ export default function Footer() {
 
     const form = event.currentTarget;
     const formData = new FormData(form);
+    const payload = new URLSearchParams();
+    formData.forEach((value, key) => {
+      if (typeof value === "string") {
+        payload.append(key, value);
+      }
+    });
 
     try {
       const response = await fetch("/__forms.html", {
@@ -20,7 +26,7 @@ export default function Footer() {
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
         },
-        body: new URLSearchParams(formData as unknown as Record<string, string>).toString(),
+        body: payload.toString(),
       });
 
       if (!response.ok) {

@@ -31,6 +31,21 @@ const PHOTOS = [
     src: "/photoshoot/men/remove_the_tattooo_202604251207.png",
     alt: "Male model wearing t-shirt, backshot",
   },
+  {
+    id: 7,
+    src: "/photoshoot/Use_my_uploaded_202604251432.png",
+    alt: "Model wearing solyr crop top, photoshoot shot",
+  },
+  {
+    id: 8,
+    src: "/photoshoot/Use_my_uploaded_202604251432(1).png",
+    alt: "Model wearing solyr crop top, alternative shot",
+  },
+  {
+    id: 9,
+    src: "/photoshoot/Use_my_uploaded_202604251432(2).png",
+    alt: "Model wearing solyr crop top, another alternative shot",
+  },
 ];
 
 export default function PhotoshootShowcase() {

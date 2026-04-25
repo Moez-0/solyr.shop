@@ -21,6 +21,16 @@ const PHOTOS = [
     src: "/photoshoot/Create_a_studio_202604241624.png",
     alt: "Model wearing crop top, editorial studio shot",
   },
+  {
+    id: 5,
+    src: "/photoshoot/men/fix_the_tattoo_202604251207.png",
+    alt: "Male model wearing t-shirt, backshot",
+  },
+  {
+    id: 6,
+    src: "/photoshoot/men/remove_the_tattooo_202604251207.png",
+    alt: "Male model wearing t-shirt, backshot",
+  },
 ];
 
 export default function PhotoshootShowcase() {
@@ -32,11 +42,11 @@ export default function PhotoshootShowcase() {
             ON SKIN
           </h2>
           <p className="font-space text-[11px] md:text-xs tracking-[0.22em] text-prussian-blue/70 font-bold uppercase">
-            Crop Tops on Body
+            Collection on Body
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 pt-4 md:pt-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 pt-4 md:pt-6">
           {PHOTOS.map((photo, index) => (
           <figure
             key={photo.id}
@@ -47,7 +57,7 @@ export default function PhotoshootShowcase() {
                 src={photo.src}
                 alt={photo.alt}
                 fill
-                sizes="(max-width: 768px) 50vw, 25vw"
+                sizes="(max-width: 768px) 50vw, 33vw"
                 quality={95}
                 className="object-cover"
                 priority={index < 2}
